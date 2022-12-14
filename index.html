@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Checkbox</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="log_in_form">
+        <form
+          name="form"
+          method="post"
+          action="https://fom.in.ua/echo"
+          target="_blank"
+        >
+          <div class="radio-switch">
+            <div class="switch">
+              <input
+                type="radio"
+                id="сhoice1"
+                name="switch"
+                value="log_in"
+                checked
+              />
+              <label for="сhoice1"> <span> Вход </span></label>
+            </div>
+            <div class="switch">
+              <input
+                type="radio"
+                id="сhoice2"
+                name="switch"
+                value="registration"
+              />
+              <label for="сhoice2"> <span> Регистрация </span></label>
+            </div>
+          </div>
+          <h2>Вход</h2>
+          <div class="form">
+            <input
+              class="input"
+              type="email"
+              name="email"
+              value=""
+              required
+              placeholder="Введите E-mail"
+            />
+            <input
+              class="input"
+              type="password"
+              name="password"
+              value=""
+              required
+              placeholder="Пароль"
+            />
+          </div>
+          <div class="form_2">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox"> <span> Запомнить меня </span></label>
+            </div>
+            <a href="#"> Забыли пароль?</a>
+          </div>
+          <div class="log_in">
+            <input class="input" type="submit" value="Войти" />
+          </div>
+          <div class="form_3">
+            <span class="text"> Еще нет аккаунта? </span>
+            <a href="#"> Зарегистрироваться</a>
+          </div>
+          <span class="text"> Или войдите через</span>
+          <div>
+            <ul class="icons">
+              <li>
+                <a href="https://uk-ua.facebook.com/" target="_blank">
+                  <svg class="icon icon_s">
+                    <use href="images/svg/sprite.svg#fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <svg class="icon">
+                    <use href="images/svg/sprite.svg#inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href=" https://www.linkedin.com/" target="_blank">
+                  <svg class="icon">
+                    <use href="images/svg/sprite.svg#lin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
